@@ -13,7 +13,7 @@ const Navigation = () => {
   return (
     <nav className="navbar">
       <NavLink to="/">
-        <img src="/logo-2.png" alt="Picture of logo" />
+        <img src="/logo.png" alt="Picture of logo" />
       </NavLink>
 
       <div className="burger-menu" onClick={toggleMenu}>
@@ -21,16 +21,19 @@ const Navigation = () => {
       </div>
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/">Forside</NavLink>
         </li>
         <li>
-          <NavLink to="/products">Furnitures</NavLink>
+          <NavLink to="/products">Produkter</NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/faq">FAQ</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/memberclub">Kundeklubben</NavLink>
+        </li>
+        <li>
+          <NavLink to="/memberclub">Backoffice</NavLink>
         </li>
       </ul>
     </nav>
