@@ -7,9 +7,7 @@ const useFetchProducts = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch(
-        "https://dummyjson.com/products/category/furniture/"
-      );
+      const response = await fetch("https://legekrogen.webmcdm.dk/products");
       const data = await response.json();
       setProducts(data.products);
     } catch (error) {

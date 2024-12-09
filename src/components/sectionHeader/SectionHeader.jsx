@@ -1,7 +1,11 @@
 import styles from "./sectionHeader.module.css";
 
-const SectionHeader = ({ title }) => {
-  return <h2 className={styles.sectionHeader}>{title}</h2>;
+const SectionHeader = ({ title, subtitle }) => {
+  return (
+    <div className={styles.sectionHeader}>
+      <h2>{title}</h2>;<h3>{subtitle}</h3>;
+    </div>
+  );
 };
 
 export default SectionHeader;
