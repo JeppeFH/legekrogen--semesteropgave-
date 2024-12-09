@@ -16,12 +16,8 @@ const useFetchProducts = () => {
     }
   };
 
-  /* Filter variable */
-  let sofas = products.filter((e) => e.tags.includes("sofas"));
-  let officeChairs = products.filter((e) => e.tags.includes("office chairs"));
-  let beds = products.filter((e) => e.tags.includes("beds"));
-  let bedsideTables = products.filter((e) => e.tags.includes("bedside tables"));
-  let ratings = products.filter((r) => r.rating > 4);
+  /* Recommended products */
+  let recommended = products.filter((r) => r.recommended === "true");
 
   useEffect(() => {
     fetchProducts();
@@ -29,11 +25,7 @@ const useFetchProducts = () => {
 
   return {
     products,
-    sofas,
-    officeChairs,
-    beds,
-    bedsideTables,
-    ratings,
+    recommended,
   };
 };
 

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
 const ProductCard = ({ product }) => {
-  const [favorites, setfavorites] = useLocalStorage("Recommended", []);
+  const [recommended] = useLocalStorage("Recommended", []);
 
   return (
     <figure className={styles.productCard}>
