@@ -1,0 +1,163 @@
+h1 {
+  margin-bottom: 5px;
+  margin-top: 100px;
+  font-size: 35px;
+}
+
+h2 {
+  color: rgb(109, 109, 109);
+  font-size: 18px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.productsDetailsContainer {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 60px;
+  padding: 0 60px;
+}
+
+.productsDetailsContainer div {
+  flex-direction: column;
+  text-align: start;
+}
+
+.productInfo {
+  padding: 0 201px 0 0;
+}
+
+.productInfo p:not(.productPrice) {
+  font-size: 16px;
+}
+
+.description,
+.stock {
+  margin-bottom: 20px;
+}
+
+.stock {
+  color: #f8601a;
+  margin-top: 20px;
+}
+
+.productPrice {
+  font-size: 25px;
+  color: #f8601a;
+  margin-top: 35px;
+}
+
+.quantityCartContainer {
+  display: flex;
+  flex-direction: row !important;
+  margin-top: 35px;
+  gap: 15px;
+}
+
+.productsDetailsContainer img {
+  width: 600px;
+  height: 600px;
+}
+
+.imageContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, auto);
+  gap: 10px;
+  justify-items: center;
+}
+
+.imageContainer img:nth-child(1) {
+  grid-column: span 3;
+  grid-row: 1;
+}
+
+.imageContainer img:not(:first-child) {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  transition: opacity 250ms ease;
+}
+
+.imageContainer img:not(:first-child):hover {
+  opacity: 0.7;
+}
+
+.imageContainer img:not(:first-child).active {
+  opacity: 0.5;
+}
+
+.imageContainer img:nth-child(2) {
+  grid-column: span 1;
+  grid-row: 2;
+}
+
+.imageContainer img:nth-child(3) {
+  grid-column: span 1;
+  grid-row: 2;
+}
+
+.imageContainer img:nth-child(4) {
+  grid-column: span 1;
+  grid-row: 2;
+}
+
+@media screen and (max-width: 1234px) {
+  .productsDetailsContainer {
+    padding: 0 5px;
+  }
+
+  .productInfo {
+    padding: 0 5px 0 0;
+  }
+
+  .productsDetailsContainer img {
+    width: 450px;
+    height: 450px;
+  }
+
+  .imageContainer img:not(:first-child) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .productsDetailsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .productInfo {
+    text-align: center !important;
+  }
+
+  .description {
+    padding: 0px 100px;
+  }
+
+  .productsDetailsContainer img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .quantityCartContainer {
+    justify-content: center;
+  }
+
+  /* Hurtig løsning*/
+  .productInfo h1,
+  .productInfo h2 {
+    position: relative;
+    bottom: 10px;
+    bottom: 650px;
+  }
+
+  .imageContainer {
+    position: relative;
+    top: 120px;
+  }
+}
