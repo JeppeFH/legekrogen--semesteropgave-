@@ -3,6 +3,7 @@ import { useRoutes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Products from "./pages/products/Products";
 import ProductDetails from "./pages/productDetails/ProductDetails";
+import Shipping from "./components/shipping/Shipping";
 
 function App() {
   const routes = useRoutes([
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className="app">
+      <Shipping />
       <Navigation />
       <div className="content">{routes}</div>
     </div>

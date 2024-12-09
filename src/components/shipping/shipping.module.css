@@ -1,0 +1,15 @@
+.shippingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d7e6ed;
+  max-height: 30px;
+  max-width: 100%;
+}
+
+.shippingContainer p {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.31px;
+  font-family: "Inter", sans-serif;
+}

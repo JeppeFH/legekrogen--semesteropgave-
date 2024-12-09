@@ -20,6 +20,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-items: center;
+  margin-bottom: 66px;
 }
 
 .productCard h4,
@@ -27,6 +28,7 @@ section {
   font-family: "Be Vietnam Pro", serif;
   color: white;
   padding-left: 16px;
+  text-align: start;
 }
 
 .productCard h4 {
