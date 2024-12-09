@@ -5,7 +5,7 @@ const Shipping = () => {
   return (
     <>
       <div className={styles.shippingContainer}>
-        <MdLocalShipping size={13} />
+        <MdLocalShipping size={13} color="darkblue" />
         <p>Fri fragt ved køb over 499,-</p>
       </div>
     </>
