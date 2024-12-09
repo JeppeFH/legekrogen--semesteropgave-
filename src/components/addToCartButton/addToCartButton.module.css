@@ -1,0 +1,29 @@
+.addToCartBtn {
+  font-size: 18px;
+  background-color: #f8601a;
+  color: white;
+  display: flex;
+  gap: 10px;
+  border-radius: 5px;
+  flex-direction: row !important;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.addToCartBtn button {
+  font-size: 16px;
+  color: white;
+}
+
+.addToCartBtn:hover {
+  background-color: #dd5a1d;
+  transition: all 180ms ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  .addToCartBtn {
+    width: 30%;
+  }
+}

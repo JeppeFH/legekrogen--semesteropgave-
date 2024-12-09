@@ -1,6 +1,6 @@
 import SectionHeader from "../../components/sectionHeader/SectionHeader";
 import PageHero from "../../components/pageHero/PageHero";
-import heroImg from "../../assets/hero.webp";
+import heroImg from "../../assets/hero-front.jpg";
 import Favorites from "../../components/favorites/Favorites";
 import MyFavorites from "../../components/myfavorites/MyFavorites";
 import Newsletter from "../../components/newsletter/Newsletter";
@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <article>
-      <PageHero title="Quality furnitures" heroImg={heroImg} />
+      <PageHero title="At lege er at leve" heroImg={heroImg} />
 
       <SectionHeader title="Favorites" />
       <Favorites />

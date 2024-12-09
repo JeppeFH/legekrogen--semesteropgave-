@@ -1,5 +1,5 @@
 import PageHero from "../../components/pageHero/PageHero";
-import heroImg from "../../assets/hero.webp";
+import heroImg from "../../assets/hero-products.jpg";
 import { useEffect, useState } from "react";
 import ProductCard from "../../components/productCard/ProductCard";
 import styles from "./products.module.css";
