@@ -15,7 +15,7 @@
 .quantityCount .quantity {
   text-align: center;
   width: 40px;
-  color: black;
+  color: white;
   font-weight: 700;
 }
 
@@ -31,7 +31,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: #d45c14;
+  color: #355675;
 }
 
 .quantityCount .DecreBtn:hover,

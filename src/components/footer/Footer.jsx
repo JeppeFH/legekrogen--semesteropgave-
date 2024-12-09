@@ -3,8 +3,7 @@ import styles from "./footer.module.css";
 const Footer = () => {
   return (
     <footer>
-      <img src="/logo-2.png" alt="Picture of logo" />
-      <p>© 2024 Furnitures | All Rights Reserved</p>
+      <h3>Kundeservice</h3>
     </footer>
   );
 };
