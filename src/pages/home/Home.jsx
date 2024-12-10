@@ -5,6 +5,7 @@ import Recommended from "../../components/recommended/Recommended";
 import CustomerReviews from "../../components/customerReviews/CustomerReviews";
 import Newsletter from "../../components/newsletter/Newsletter";
 import Footer from "../../components/footer/Footer";
+import MemberClubSection from "../../components/memberClubSection/MemberClubSection";
 
 const Home = () => {
   return (
@@ -16,7 +17,9 @@ const Home = () => {
       <Recommended />
 
       <CustomerReviews />
-      <Newsletter />
+
+      <MemberClubSection />
+
       <Footer />
     </article>
   );

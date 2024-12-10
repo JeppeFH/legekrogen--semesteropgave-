@@ -1,0 +1,29 @@
+.memberClubSection {
+  background-color: #d7e6ed;
+  text-align: center;
+}
+
+.memberClubSection p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Quicksand", serif;
+  line-height: 20px;
+  color: #355675;
+}
+
+.memberClubSection p:nth-of-type(1) {
+  padding-top: 68px;
+}
+
+.memberClubSection p:nth-of-type(2) {
+  margin-bottom: 12px;
+}
+
+.memberClubSection h2 {
+  font-family: "Square Peg", serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 84.48px;
+  margin-bottom: 12px;
+  color: #355675;
+}
