@@ -9,7 +9,7 @@ const Recommended = () => {
   return (
     <section>
       {recommended.map((product) => (
-        <ProductCard key={product.id} product={product} />
+        <ProductCard key={product._id} product={product} />
       ))}
     </section>
   );

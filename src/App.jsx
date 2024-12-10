@@ -4,6 +4,8 @@ import Home from "./pages/home/Home";
 import Products from "./pages/products/Products";
 import ProductDetails from "./pages/productDetails/ProductDetails";
 import Shipping from "./components/shipping/Shipping";
+import Faq from "./pages/faq/Faq";
+import Memberclub from "./pages/memberclub/Memberclub";
 
 function App() {
   const routes = useRoutes([

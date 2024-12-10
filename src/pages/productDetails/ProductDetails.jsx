@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import styles from "./productsDetails.module.css";
+import styles from "./productDetails.module.css";
 import AddToCartButton from "../../components/addToCartButton/AddToCartButton";
 import QuantityCount from "../../components/quantityCount/QuantityCount";
 import Footer from "../../components/footer/Footer";
