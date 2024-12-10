@@ -1,5 +1,5 @@
 import styles from "./footer.module.css";
-import { CiMail } from "react-icons/ci";
+import { MdOutlineMailOutline } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { LuInstagram } from "react-icons/lu";
@@ -7,10 +7,10 @@ import { LuInstagram } from "react-icons/lu";
 const Footer = () => {
   return (
     <footer>
-      <div className="customerService">
-        <h3>Kundeservice</h3>{" "}
+      <div className={styles.customerService}>
+        <h3>Kundeservice</h3>
         <figure>
-          <CiMail size={20} color="white" />
+          <MdOutlineMailOutline size={25} color="white" />
           <p>kontakt@legekrogen.dk</p>
         </figure>
         <figure>
@@ -19,7 +19,7 @@ const Footer = () => {
         </figure>
       </div>
 
-      <div className="followUs">
+      <div className={styles.followUs}>
         <h3>Følg os</h3>
         <figure>
           <FaFacebook size={30} color="white" />
