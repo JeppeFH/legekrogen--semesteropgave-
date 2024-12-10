@@ -13,11 +13,15 @@ const Navigation = () => {
   return (
     <nav className="navbar">
       <NavLink to="/">
-        <img src="/logo.png" alt="Picture of logo" />
+        <img
+          src="/logo.png"
+          alt="Picture of logo"
+          className={isOpen ? "logo hidden" : "logo"}
+        />
       </NavLink>
 
       <div className="burger-menu" onClick={toggleMenu}>
-        {isOpen ? <IoClose size={30} /> : <GiHamburgerMenu size={30} />}
+        {isOpen ? <IoClose size={50} /> : <GiHamburgerMenu size={30} />}
       </div>
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li>
@@ -31,9 +35,6 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink to="/memberclub">Kundeklubben</NavLink>
-        </li>
-        <li>
-          <NavLink to="/memberclub">Backoffice</NavLink>
         </li>
       </ul>
     </nav>
