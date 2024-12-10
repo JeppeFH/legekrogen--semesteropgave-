@@ -1,19 +1,20 @@
 .productCard {
-  background-color: #9478a8;
-  box-shadow: 8px 8px 8px rgb(229, 229, 229);
+  box-shadow: 8px 8px 8px rgb(0 0 0 / 33%);
   margin-bottom: 70px;
-  border-radius: 17px;
+  border-bottom-right-radius: 17px;
+  border-bottom-left-radius: 17px;
   max-width: 350px;
 }
 
 .imageContainer {
   max-width: 100%;
-  max-height: 269px;
-  padding-bottom: 59px;
+  height: 269px;
 }
 
 .imageContainer img {
   width: 100%;
+  border-top-right-radius: 17px;
+  border-top-left-radius: 17px;
 }
 
 section {
@@ -23,8 +24,18 @@ section {
   margin-bottom: 66px;
 }
 
+.productCardInfo {
+  max-width: 100%;
+  background-color: #9478a8;
+  height: 177px;
+  margin-top: 80px;
+  border-bottom-right-radius: 17px;
+  border-bottom-left-radius: 17px;
+}
+
 .productCard h4,
-.productCard h5 .productCard p {
+.productCard h5,
+.productCard p {
   font-family: "Be Vietnam Pro", serif;
   color: white;
   padding-left: 16px;
@@ -36,6 +47,7 @@ section {
   line-height: 30.36px;
   font-weight: 100;
   margin-bottom: 7px;
+  padding-top: 50px;
 }
 
 .productCard h5 {

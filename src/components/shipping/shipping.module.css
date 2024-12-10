@@ -3,8 +3,9 @@
   align-items: center;
   justify-content: center;
   background-color: #d7e6ed;
-  max-height: 30px;
+  height: 30px;
   max-width: 100%;
+  gap: 7px;
 }
 
 .shippingContainer p {
