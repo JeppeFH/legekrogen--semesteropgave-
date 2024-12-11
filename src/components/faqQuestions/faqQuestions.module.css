@@ -22,12 +22,6 @@
   color: #355675;
 }
 
-.arrowDown {
-  font-size: 50px;
-  color: #355675;
-  justify-self: end;
-}
-
 .question {
   align-items: center;
   display: grid;
@@ -63,10 +57,13 @@
   z-index: 1;
 }
 
-.faqContainer .arrowDown.openArrow {
-  transform: rotate(180deg);
+.arrowDown {
+  font-size: 50px;
+  color: #355675;
+  justify-self: end;
+  transition: transform 300ms ease;
 }
 
-.faqContainer .arrowDown {
-  transition: transform 300ms ease;
+.arrowDown.openArrow {
+  transform: rotate(180deg);
 }

@@ -1,5 +1,5 @@
-import SectionHeader from "../../components/sectionHeader/SectionHeader";
 import PageHero from "../../components/pageHero/PageHero";
+import SectionHeader from "../../components/sectionHeader/SectionHeader";
 import heroImg from "../../assets/hero-home.jpg";
 import Recommended from "../../components/recommended/Recommended";
 import CustomerReviews from "../../components/customerReviews/CustomerReviews";

@@ -32,10 +32,3 @@ a {
 section {
   width: 100%;
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  padding: 1em 2em;
-  gap: 20px;
-}
