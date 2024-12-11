@@ -11,18 +11,6 @@ section img {
   z-index: 1;
 }
 
-section {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  margin-bottom: 60px;
-}
-
-@media screen and (max-width: 1100px) {
-  section {
-    grid-template-columns: repeat(2, auto);
-  }
-}
-
 @media screen and (max-width: 768px) {
   section {
     grid-template-columns: repeat(1, auto);

@@ -20,10 +20,11 @@ const FaqQuestions = () => {
             <p>{f.question}</p>
             <RiArrowDownSLine
               className={styles.arrowDown}
-              onClick={toggleFaq}
+              onClick={() => toggleFaq(index)}
             />
           </div>
-          <div className={isOpen ? `${styles.answerOpen} ` : styles.answer}>
+          <div className={isOpen ? `${styles.answerOpen}  ` : styles.answer}>
+            <span></span>
             <p>{f.answer}</p>
           </div>
         </div>

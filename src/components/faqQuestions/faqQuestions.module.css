@@ -1,5 +1,6 @@
 .faq {
   background-color: white;
+  padding-bottom: 33px;
 }
 
 .faqContainer {
@@ -7,7 +8,7 @@
   height: fit-content;
   border: 1px solid #355675;
   border-radius: 25px;
-  margin-bottom: 64px;
+  margin-top: 33px;
   position: relative;
 }
 
@@ -18,21 +19,30 @@
   line-height: 20.24px;
   padding-left: 20px;
   text-align: start;
+  color: #355675;
+}
+
+.arrowDown {
+  font-size: 50px;
+  color: #355675;
+  justify-self: end;
+}
+
+.question {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 70px;
 }
 
 .question p,
 .arrowDown {
-  padding-top: 33px;
+  margin: 20px 0;
 }
 
-.arrowDown {
-  font-size: 90px;
-  color: #355675;
-}
-
-.question {
-  display: flex;
-  align-items: center;
+.answerOpen p {
+  margin-right: 95px;
+  margin-bottom: 20px;
 }
 
 .faqContainer .answer {
@@ -42,18 +52,15 @@
 }
 
 .faqContainer .answerOpen {
-  display: block;
+  display: grid;
 }
 
-.faqContainer .answer::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 0;
-  width: 100%;
+.faqContainer .answerOpen span {
+  margin: 0 0 12px 20px;
+  width: 90%;
   height: 1px;
   background-color: #355675;
-  z-index: -1;
+  z-index: 1;
 }
 
 .faqContainer .arrowDown.openArrow {

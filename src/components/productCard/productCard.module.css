@@ -22,7 +22,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  margin-bottom: 66px;
+  align-items: center;
 }
 
 .productCardInfo {
