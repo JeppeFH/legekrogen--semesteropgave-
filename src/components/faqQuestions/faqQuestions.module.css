@@ -1,0 +1,65 @@
+.faq {
+  background-color: white;
+}
+
+.faqContainer {
+  width: 301px;
+  height: fit-content;
+  border: 1px solid #355675;
+  border-radius: 25px;
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.faqContainer p {
+  font-family: "Be Vietnam Pro", serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20.24px;
+  padding-left: 20px;
+  text-align: start;
+}
+
+.question p,
+.arrowDown {
+  padding-top: 33px;
+}
+
+.arrowDown {
+  font-size: 90px;
+  color: #355675;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+}
+
+.faqContainer .answer {
+  display: none;
+  position: relative;
+  padding: 20px;
+}
+
+.faqContainer .answerOpen {
+  display: block;
+}
+
+.faqContainer .answer::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #355675;
+  z-index: -1;
+}
+
+.faqContainer .arrowDown.openArrow {
+  transform: rotate(180deg);
+}
+
+.faqContainer .arrowDown {
+  transition: transform 300ms ease;
+}

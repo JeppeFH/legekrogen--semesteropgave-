@@ -27,11 +27,11 @@ const Products = () => {
             <ProductCard key={product._id} product={product} />
           ))}
         </section>
+
+        <MemberClubSection />
+
+        <Footer />
       </article>
-
-      <MemberClubSection />
-
-      <Footer />
     </>
   );
 };
