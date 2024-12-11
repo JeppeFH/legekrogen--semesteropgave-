@@ -8,9 +8,7 @@ const useFetchReviews = () => {
   const fetchReviews = async () => {
     try {
       const response = await fetch("https://legekrogen.webmcdm.dk/reviews");
-      console.log("Fetch response:", response);
       const data = await response.json();
-      console.log("Fetched Reviews:", data);
       setReviews(data);
     } catch (error) {
       setError(error.message);

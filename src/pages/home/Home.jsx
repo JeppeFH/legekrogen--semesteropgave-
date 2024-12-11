@@ -10,7 +10,11 @@ import MemberClubSection from "../../components/memberClubSection/MemberClubSect
 const Home = () => {
   return (
     <article>
-      <PageHero title="At lege er at leve" heroImg={heroImg} />
+      <PageHero
+        title="At lege er at leve"
+        tagline="Her hos os har vi et stort udvalg af legetøj i høj kvalitet"
+        heroImg={heroImg}
+      />
 
       <SectionHeader title="Et udpluk af vores" subtitle="Legetøj" />
 

@@ -1,6 +1,6 @@
 import styles from "./pageHero.module.css";
 
-const PageHero = ({ title, subtitle, heroImg }) => {
+const PageHero = ({ heroImg, title, subtitle, tagline }) => {
   return (
     <header
       className={styles.hero}
@@ -8,7 +8,8 @@ const PageHero = ({ title, subtitle, heroImg }) => {
     >
       <div>
         <h1>{title}</h1>
-        <p>{subtitle}</p>
+        <h2>{subtitle}</h2>
+        <p>{tagline}</p>
       </div>
     </header>
   );
