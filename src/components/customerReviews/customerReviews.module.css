@@ -1,0 +1,45 @@
+.customerReviews {
+  background-color: white;
+  max-width: 100%;
+  text-align: center;
+  padding-bottom: 102px;
+}
+
+.customerReviews h2 {
+  font-family: "Square Peg", serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47.52px;
+  color: #355675;
+  padding-top: 43px;
+}
+
+.customerReviews h3 {
+  font-family: "Quicksand", serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #355675;
+  padding-bottom: 43px;
+  margin-top: 5px;
+}
+
+.reviewsContainer p:nth-of-type(1) {
+  font-family: "Be Vietnam Pro", serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.18px;
+  color: #355675;
+  margin-bottom: 17px;
+  padding: 0 25px;
+}
+
+.reviewsContainer p:nth-of-type(2) {
+  font-family: "Advent Pro", serif;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14.35px;
+  color: #9478a8;
+  margin-bottom: 33px;
+}

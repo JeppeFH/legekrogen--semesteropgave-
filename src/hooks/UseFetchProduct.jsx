@@ -19,8 +19,6 @@ const useFetchProducts = () => {
   /* Recommended products */
   let recommended = products.filter((r) => r.recommended === true);
 
-  console.log(recommended);
-
   useEffect(() => {
     fetchProducts();
   }, []);
