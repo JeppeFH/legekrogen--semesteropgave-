@@ -19,7 +19,7 @@ textarea {
   border: 1px solid #355675;
   width: 100%;
   border-radius: 25px;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
   font-size: 24px;
   font-weight: 200;
   font-style: italic;
@@ -40,7 +40,7 @@ textarea {
   height: 57px;
   max-width: 100%;
   padding: 0px 66px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 /* Apply message */
@@ -50,6 +50,16 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  width: 100%;
+}
+
+.applyMessageOverlay {
+  background-color: #9478a8;
+  opacity: 0.7;
+  max-width: 100%;
+  height: 680px;
+  padding-top: 10px;
+  align-content: center;
 }
 
 .applyMessage h2 {
@@ -58,8 +68,7 @@ textarea {
   font-weight: 400;
   line-height: 116px;
   color: white;
-  margin-top: 258px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .applyMessage p {
@@ -68,4 +77,12 @@ textarea {
   font-weight: 500;
   line-height: 25px;
   margin-bottom: 40px;
+  color: white;
+}
+
+.form p {
+  color: red;
+  position: relative;
+  bottom: 403px;
+  right: 60px;
 }

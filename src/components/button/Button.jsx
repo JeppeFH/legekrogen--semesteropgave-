@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 
 const Button = ({ buttonText, onClick, className, type = "button" }) => {
   return (
-    <Link to={`/memberclub`}>
-      <button className={`${styles.button} ${className}`} onClick={onClick}>
-        Bliv medlem nu!
-      </button>
-    </Link>
+    <button
+      className={`${styles.button} ${className}`}
+      onClick={onClick}
+      type={type}
+    >
+      {buttonText}
+    </button>
   );
 };
 

@@ -5,11 +5,11 @@ import { RiArrowDownSLine } from "react-icons/ri";
 
 const FaqQuestions = () => {
   const { faq } = useFetchFaq();
+  const [isOpen, setIsOpen] = useState(null);
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleFaq = () => {
-    setIsOpen(!isOpen);
+  /* Tager imod id'et fra den specifikke accordion */
+  const toggleFaq = (id) => {
+    setIsOpen((prevId) => (prevId === id ? null : id));
   };
 
   return (
@@ -19,11 +19,13 @@ const FaqQuestions = () => {
           <div className={styles.question}>
             <p>{f.question}</p>
             <RiArrowDownSLine
-              className={styles.arrowDown}
-              onClick={toggleFaq}
+              className={`${styles.arrowDown} ${
+                isOpen === f._id ? styles.rotate : ""
+              }`}
+              onClick={() => toggleFaq(f._id)}
             />
           </div>
-          {isOpen && (
+          {isOpen === f._id && (
             <div className={styles.answer}>
               <span></span>
               <p>{f.answer}</p>
