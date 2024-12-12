@@ -13,11 +13,12 @@ const Products = () => {
 
   return (
     <>
-      <article>
+      <article className={styles.productPage}>
         <PageHero
           title="På udkig efter nyt"
           subtitle="LEGETØJ?"
           heroImg={heroImg}
+          heroOverlayHeight="35%"
         />
 
         <SectionHeader title="Alt vores" subtitle="Legetøj" />

@@ -12,10 +12,10 @@
   color: white;
 }
 
-.hero div {
-  background-color: #c6b2c4;
-  opacity: 53%;
+.heroOverlay {
+  background-color: rgba(198, 178, 196, 0.68);
   width: 100%;
+  align-content: center;
 }
 
 .hero h1 {

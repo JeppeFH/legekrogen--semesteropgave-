@@ -14,6 +14,7 @@ const Faq = () => {
           subtitle="SPØRGSMÅL"
           tagline="Måske er de allerede besvaret herunder. Ellers er du altid velkommen til at kontakte os."
           heroImg={heroImg}
+          heroOverlayHeight="50%"
         />
 
         <FaqQuestions />

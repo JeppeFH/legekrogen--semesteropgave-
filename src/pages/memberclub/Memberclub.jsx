@@ -12,6 +12,7 @@ const Memberclub = () => {
         subtitle="KUNDEKLUB"
         tagline="og få eksklusive nyheder før alle andre"
         heroImg={heroImg}
+        heroOverlayHeight="45%"
       />
 
       <MemberSubsciption />
