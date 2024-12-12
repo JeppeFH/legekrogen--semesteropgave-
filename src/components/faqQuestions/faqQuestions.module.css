@@ -40,13 +40,13 @@
 }
 
 .faqContainer .answer {
-  display: none;
+  /* display: none; */
   position: relative;
   padding: 20px;
 }
 
 .faqContainer .answerOpen {
-  display: grid;
+  /* display: grid; */
 }
 
 .faqContainer .answerOpen span {

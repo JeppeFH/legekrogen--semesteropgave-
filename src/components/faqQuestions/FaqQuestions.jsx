@@ -14,19 +14,21 @@ const FaqQuestions = () => {
 
   return (
     <section className={styles.faq}>
-      {faq.map((f, index) => (
-        <div className={styles.faqContainer} key={index}>
+      {faq.map((f) => (
+        <div className={styles.faqContainer} key={f._id}>
           <div className={styles.question}>
             <p>{f.question}</p>
             <RiArrowDownSLine
               className={styles.arrowDown}
-              onClick={() => toggleFaq(index)}
+              onClick={toggleFaq}
             />
           </div>
-          <div className={isOpen ? `${styles.answerOpen}  ` : styles.answer}>
-            <span></span>
-            <p>{f.answer}</p>
-          </div>
+          {isOpen && (
+            <div className={styles.answer}>
+              <span></span>
+              <p>{f.answer}</p>
+            </div>
+          )}
         </div>
       ))}
     </section>
