@@ -28,11 +28,14 @@ const MemberSubsciption = () => {
     try {
       setIsLoading(true);
 
-      const response = await fetch("https://legekrogen.webmcdm.dk/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: inputValue }),
-      });
+      const response = await fetch(
+        "https://api-medieskolerne.vercel.app/emails",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: inputValue }),
+        }
+      );
 
       const result = await response.json();
       openModal();
@@ -87,8 +90,23 @@ const MemberSubsciption = () => {
 
         {isModalOpen && (
           <Modal onClose={closeModal}>
-            <h2>Tak for din tilmelding!</h2>
-            <p>Vi sender dig en bekræftelsesmail på {inputValue}</p>
+            <div className={styles.applyMessage}>
+              <h2>Tak!</h2>
+              <p>
+                Vi ser så glade for at du vil være en <br />
+                del af vores kundeklub. {inputValue}
+              </p>
+
+              <p>
+                Tag et kig i din indbakke. Vi har <br /> givet dig fri fragt på
+                din første <br />
+                ordre.
+              </p>
+
+              <Link to={`/`}>
+                <Button buttonText="TIL FORSIDEN" />
+              </Link>
+            </div>
           </Modal>
         )}
       </section>

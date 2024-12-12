@@ -42,3 +42,30 @@ textarea {
   padding: 0px 66px;
   margin-bottom: 0;
 }
+
+/* Apply message */
+.applyMessage {
+  background-image: url(../../assets/hero-member.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.applyMessage h2 {
+  font-family: "Square Peg", serif;
+  font-size: 88px;
+  font-weight: 400;
+  line-height: 116px;
+  color: white;
+  margin-top: 258px;
+  margin-bottom: 40px;
+}
+
+.applyMessage p {
+  font-family: "Quicksand", serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
