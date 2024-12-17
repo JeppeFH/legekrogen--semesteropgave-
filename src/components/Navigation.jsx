@@ -10,6 +10,11 @@ const Navigation = () => {
     setIsOpen(!isOpen);
   };
 
+  /* Lukker nav igen efter klik */
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <NavLink to="/">
@@ -25,16 +30,24 @@ const Navigation = () => {
       </div>
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li>
-          <NavLink to="/">Forside</NavLink>
+          <NavLink to="/" onClick={closeMenu}>
+            Forside
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/products">Produkter</NavLink>
+          <NavLink to="/products" onClick={closeMenu}>
+            Produkter
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/faq">FAQ</NavLink>
+          <NavLink to="/faq" onClick={closeMenu}>
+            FAQ
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/memberclub">Kundeklubben</NavLink>
+          <NavLink to="/memberclub" onClick={closeMenu}>
+            Kundeklubben
+          </NavLink>
         </li>
       </ul>
     </nav>
