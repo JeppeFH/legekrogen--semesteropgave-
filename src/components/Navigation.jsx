@@ -10,7 +10,7 @@ const Navigation = () => {
     setIsOpen(!isOpen);
   };
 
-  /* Lukker nav igen efter klik */
+  /* Lukker menuen når et navlink bliver klikket  */
   const closeMenu = () => {
     setIsOpen(false);
   };
@@ -20,7 +20,7 @@ const Navigation = () => {
       <NavLink to="/">
         <img
           src="/logo.png"
-          alt="Picture of logo"
+          alt="Logo"
           className={isOpen ? "logo hidden" : "logo"}
         />
       </NavLink>
@@ -28,6 +28,7 @@ const Navigation = () => {
       <div className="burger-menu" onClick={toggleMenu}>
         {isOpen ? <IoClose size={50} /> : <GiHamburgerMenu size={30} />}
       </div>
+
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li>
           <NavLink to="/" onClick={closeMenu}>

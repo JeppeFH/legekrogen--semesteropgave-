@@ -6,9 +6,7 @@ const ProductCard = ({ product }) => {
   return (
     <figure className={styles.productCard}>
       {discount && (
-        <div className={styles.discountIcon}>
-          Spar {product.discountInPercent}%
-        </div>
+        <div className={styles.discountIcon}>{product.discountInPercent} %</div>
       )}
       <div className={styles.imageContainer}>
         <Link to={`/products/${product._id}`}>
