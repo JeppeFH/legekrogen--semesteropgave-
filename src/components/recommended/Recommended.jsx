@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import ProductCard from "../productCard/ProductCard";
 import styles from "./recommended.module.css";
 import { useFetchProducts } from "../../hooks/useFetchProduct";
