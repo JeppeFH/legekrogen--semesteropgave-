@@ -8,6 +8,7 @@ const Recommended = () => {
   return (
     <section>
       {recommended.map((product) => (
+        /* React kræver, at hver vare i en liste har en unik key for at identificere dem */
         <ProductCard key={product._id} product={product} />
       ))}
     </section>
